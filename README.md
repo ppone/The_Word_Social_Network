@@ -1,8 +1,8 @@
-About
+Word Social Network
 =======================
 
 This program calculates the size of the social network of a word based on it's friends.  We define a friend of a word by them
-having a levenshtein distance = 1 [1].
+having a levenshtein distance = 1 [1], in reference to our words in our dictionary <emp>word.list.txt</emp>.
 
 To calculate the social network of a word, we simply type.
 
