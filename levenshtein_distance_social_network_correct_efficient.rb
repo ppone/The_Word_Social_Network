@@ -15,11 +15,6 @@ $social_network_count = 1
 #this hash will hold our social network and we can print it out or do other functions to it.
 #social_network_tree[parent] = child
 
-#$social_network_tree = {}
-
-#flat social network
-#$friends = {}
-
 #need to read file, strip the each word of new line characters and store them
 #in our hash.
 
@@ -43,7 +38,6 @@ count = 0
  while (parents.size > 0)
    all_children = []  
    for parent in parents 
-       # children = []
         for i in 0.upto(parent.size - 1)
          additional_character = "a"
          for x in 0..25
@@ -87,18 +81,8 @@ count = 0
        additional_character = additional_character.next
 
        end
+   end 
 
-
-       # if (children.size > 0)
-           # $social_network_tree[parent] = children
-        #    all_children = all_children + children
-       # end
- 
-    end 
-
- # puts "Social Network Tree up to level level #{count.to_s} is " +  $friends.to_s
-# puts "social network count is #{$social_network_count.to_s} up to level #{count.to_s}"
-  
   parents = all_children
   count += 1
 end
@@ -106,7 +90,7 @@ end
 end
 
 starting_string = "causes"
-# $friends[starting_string] = 1
+
 $dictionary.delete(starting_string)
 permutate([] << starting_string)
 puts "Size of the total social network of #{starting_string} is #{$social_network_count.to_s}"
