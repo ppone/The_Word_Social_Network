@@ -10,7 +10,7 @@ Directory_file = "word.list.txt"
 $dictionary = {}
 
 #our total network count
-$social_network_count = 1
+$social_network_count = 0
 
 #this hash will hold our social network and we can print it out or do other functions to it.
 #social_network_tree[parent] = child
@@ -91,7 +91,11 @@ end
 
 starting_string = ARGV[0]
 
-$dictionary.delete(starting_string)
+if !($dictionary[starting_string].nil?)
+   $dictionary.delete(starting_string)
+   $social_network_count += 1
+end
+
 permutate([] << starting_string)
 puts "Size of the total social network of #{starting_string} is #{$social_network_count.to_s}"
 end_time = Time.now
