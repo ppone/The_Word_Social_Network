@@ -4,7 +4,7 @@
 beginning_time = Time.now
 
 #location of where our file is held and the name of our file
-Directory_file = "word.list.txt"
+Directory_file = "Documents/word.list.txt"
 
 #this hash will hold our word files
 $dictionary = {}
