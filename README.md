@@ -7,7 +7,7 @@ having a levenshtein distance = 1 [1].
 To calculate the social network of a word, we simply type.
 
 <code>
-ruby word_we_want
+ruby levenshtein_distance_social_network_correct_efficient.rb word_we_want
 </code>
 
 
