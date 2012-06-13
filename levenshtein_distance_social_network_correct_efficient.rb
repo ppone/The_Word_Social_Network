@@ -89,7 +89,7 @@ end
 
 end
 
-starting_string = "causes"
+starting_string = ARGV[0]
 
 $dictionary.delete(starting_string)
 permutate([] << starting_string)
